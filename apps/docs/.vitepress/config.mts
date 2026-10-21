@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
+  base: process.env.VITEPRESS_BASE || '/',
   title: 'Olenna StudioX',
   description: 'Design Language System for Olenna Luxury Beauty, Fashion & Lifestyle',
   head: [
@@ -117,7 +118,7 @@ export default defineConfig({
       provider: 'local'
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/olenna/dls-olenna-studiox' }
+      { icon: 'github', link: 'https://github.com/Olenna-Studio/dls-olenna-studiox' }
     ],
     footer: {
       message: 'Olenna StudioX Design Language System. Everyday elegance, thoughtfully curated.',

@@ -16,7 +16,7 @@ Before writing code, review our core principles:
 
 1. **Fork and Clone**:
    ```bash
-   git clone https://github.com/olenna/dls-olenna-studiox.git
+   git clone https://github.com/Olenna-Studio/dls-olenna-studiox.git
    cd dls-olenna-studiox
    ```
 

@@ -6,7 +6,7 @@ Thank you for contributing to the Olenna StudioX Design Language System.
 
 1. **Clone and Install**:
    ```bash
-   git clone https://github.com/olenna/dls-olenna-studiox.git
+   git clone https://github.com/Olenna-Studio/dls-olenna-studiox.git
    cd dls-olenna-studiox
    pnpm install
    ```

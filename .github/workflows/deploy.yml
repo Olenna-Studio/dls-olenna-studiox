@@ -1,0 +1,90 @@
+name: Deploy Olenna DLS to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+# Permissions required to deploy to GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    name: Build & Deploy
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Enable Corepack & pnpm
+        run: |
+          corepack enable
+          corepack prepare pnpm@12.14.0 --activate
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Validate & Compile Tokens
+        run: pnpm build:tokens
+
+      - name: Run Unit & Accessibility Tests
+        run: pnpm test
+
+      - name: Build All Monorepo Packages
+        run: pnpm build
+
+      - name: Setup GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build Documentation Website (VitePress)
+        env:
+          VITEPRESS_BASE: ${{ steps.pages.outputs.base_path }}/
+        run: pnpm build:docs
+
+      - name: Build Storybook Catalog
+        run: pnpm build:storybook
+
+      - name: Bundle Storybook into Documentation
+        run: |
+          cp -r packages/storybook/storybook-static apps/docs/.vitepress/dist/storybook
+          touch apps/docs/.vitepress/dist/.nojekyll
+
+      - name: Build Consumer Example Applications
+        run: pnpm build:examples
+
+      - name: Upload artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: apps/docs/.vitepress/dist
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Publish Packages to NPM (if NPM_TOKEN is provided)
+        if: env.NPM_TOKEN != ''
+        run: |
+          pnpm changeset publish || true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

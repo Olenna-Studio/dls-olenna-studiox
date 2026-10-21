@@ -10,15 +10,14 @@ This runbook outlines the exact sequence for preparing, validating, and publishi
 
 ---
 
-## Automated CI/CD Release Flow (Recommended)
+## Automated Deployment Workflow
 
-1. Contributors include changesets in pull requests:
-   ```bash
-   pnpm changeset
-   ```
-2. When PRs merge to `main`, the `release.yml` GitHub Actions workflow runs:
-   - If unreleased changesets exist, it opens/updates the `"Version Packages"` PR.
-   - When the release manager merges the Version Packages PR, GitHub Actions tags the release and publishes the packages to npm automatically.
+When code is added to `main` (either committed directly or merged), the `deploy.yml` GitHub Actions workflow triggers automatically:
+
+1. **Quality Gates**: Runs token validation, unit & accessibility tests, and compiles all `@olenna/*` monorepo packages.
+2. **Builds Documentation & Playground**: Compiles the VitePress documentation website and Storybook 8 interactive catalog.
+3. **Deploys to GitHub Pages**: Automatically deploys the documentation and nested Storybook catalog to GitHub Pages with zero manual PR overhead.
+4. **Automated Package Publishing**: If `NPM_TOKEN` is configured in repository secrets, packages are published directly to npm.
 
 ---
 
