@@ -209,7 +209,7 @@ describe('@olenna/react Components', () => {
       render(<Logo variant="horizontal" size="md" />);
       const img = screen.getByRole('img', { name: /olenna/i });
       expect(img).toBeInTheDocument();
-      expect(img).toHaveAttribute('src', '/images/logo/olenna-horizontal.webp');
+      expect(img).toHaveAttribute('src', '/svg/olenna-horizontal-light.svg');
       expect(img).toHaveAttribute('width', '180');
       expect(img).toHaveAttribute('height', '40');
     });

@@ -6,7 +6,8 @@ hero:
   text: "Design Language System"
   tagline: "Everyday elegance, thoughtfully curated. The unified source of truth for Olenna's web, PWA, and boutique platforms."
   image:
-    src: /images/logo/olenna-logo-full.webp
+    light: /svg/olenna-logo-full-light.svg
+    dark: /svg/olenna-logo-full-dark.svg
     alt: Olenna StudioX Monogram
   actions:
     - theme: brand

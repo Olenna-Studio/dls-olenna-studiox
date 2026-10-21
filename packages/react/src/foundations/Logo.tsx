@@ -50,10 +50,10 @@ export const Logo: React.FC<LogoProps> = ({
   };
 
   const assetSources = {
-    horizontal: '/images/logo/olenna-horizontal.webp',
-    stacked: '/images/logo/olenna-logo-full.webp',
-    wordmark: '/images/logo/olenna-wordmark.webp',
-    emblem: '/images/logo/olenna-emblem.webp'
+    horizontal: '/svg/olenna-horizontal-light.svg',
+    stacked: '/svg/olenna-logo-full-light.svg',
+    wordmark: '/svg/olenna-wordmark-light.svg',
+    emblem: '/svg/olenna-emblem-light.svg'
   };
 
   const currentDim = dimensions[variant][size];

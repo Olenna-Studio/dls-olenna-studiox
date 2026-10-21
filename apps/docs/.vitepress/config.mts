@@ -11,7 +11,10 @@ export default defineConfig({
     ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300..700&display=swap' }]
   ],
   themeConfig: {
-    logo: '/images/logo/olenna-emblem.webp',
+    logo: {
+      light: '/svg/olenna-emblem-light.svg',
+      dark: '/svg/olenna-emblem-dark.svg'
+    },
     siteTitle: 'Olenna StudioX DLS',
     nav: [
       { text: 'Guide', link: '/guide/getting-started' },

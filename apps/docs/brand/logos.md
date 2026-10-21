@@ -11,9 +11,9 @@ Used for splash screens, editorial brand stories, packaging, and high-impact her
 
 <div style="display: flex; gap: 2rem; margin: 1.5rem 0; flex-wrap: wrap;">
   <div style="padding: 2rem; background: #FFFAF7; border: 1px solid rgba(73, 53, 65, 0.12); border-radius: 12px; text-align: center; flex: 1; min-width: 240px;">
-    <img src="/images/logo/olenna-logo-full.webp" alt="Olenna Full Stacked (Master WebP)" style="max-height: 140px; margin: 0 auto; object-fit: contain;" />
-    <p style="margin-top: 1rem; font-size: 0.8125rem; color: #5C4C56; font-weight: 500;">Authentic Master Stacked Lockup</p>
-    <code style="font-size: 0.75rem;">/images/logo/olenna-logo-full.webp</code>
+    <img src="/svg/olenna-logo-full-light.svg" alt="Olenna Full Stacked (Light)" style="max-height: 140px; margin: 0 auto; object-fit: contain;" />
+    <p style="margin-top: 1rem; font-size: 0.8125rem; color: #5C4C56; font-weight: 500;">Master Stacked Lockup (Light)</p>
+    <code style="font-size: 0.75rem;">/svg/olenna-logo-full-light.svg</code>
   </div>
   <div style="padding: 2rem; background: #493541; border: 1px solid #6D4C5E; border-radius: 12px; text-align: center; flex: 1; min-width: 240px;">
     <img src="/svg/olenna-logo-full-dark.svg" alt="Olenna Full Stacked (Dark Overlay)" style="max-height: 140px; margin: 0 auto; object-fit: contain;" />
@@ -26,9 +26,9 @@ Used for splash screens, editorial brand stories, packaging, and high-impact her
 The principal lockup for responsive navigation headers, sticky toolbars, and email footers.
 
 <div style="padding: 2rem; background: #FFFAF7; border: 1px solid rgba(73, 53, 65, 0.12); border-radius: 12px; margin: 1rem 0;">
-  <img src="/images/logo/olenna-horizontal.webp" alt="Olenna Horizontal" style="max-height: 48px; object-fit: contain;" />
-  <p style="margin-top: 1rem; font-size: 0.8125rem; color: #5C4C56;">Principal Navigation Header Lockup (180x40 @ md)</p>
-  <code style="font-size: 0.75rem;">/images/logo/olenna-horizontal.webp</code>
+  <img src="/svg/olenna-horizontal-light.svg" alt="Olenna Horizontal" style="max-height: 48px; object-fit: contain;" />
+  <p style="margin-top: 1rem; font-size: 0.8125rem; color: #5C4C56;">Principal Navigation Header Lockup</p>
+  <code style="font-size: 0.75rem;">/svg/olenna-horizontal-light.svg</code>
 </div>
 
 ### 3. Botanical Emblem (`emblem`)
@@ -36,12 +36,12 @@ Compact circular monogram for mobile app icons, favicons, avatar watermarks, and
 
 <div style="display: flex; gap: 2rem; align-items: center; margin: 1.5rem 0; flex-wrap: wrap;">
   <div style="padding: 1.5rem; background: #FFFAF7; border: 1px solid rgba(73, 53, 65, 0.12); border-radius: 12px; text-align: center;">
-    <img src="/images/logo/olenna-emblem.webp" alt="Olenna Emblem" style="width: 56px; height: 50px; margin: 0 auto; object-fit: contain;" />
-    <p style="margin-top: 0.5rem; font-size: 0.75rem; color: #5C4C56;">Botanical Emblem (WebP)</p>
+    <img src="/svg/olenna-emblem-light.svg" alt="Olenna Emblem Light" style="width: 56px; height: 50px; margin: 0 auto; object-fit: contain;" />
+    <p style="margin-top: 0.5rem; font-size: 0.75rem; color: #5C4C56;">Botanical Emblem (Light)</p>
   </div>
   <div style="padding: 1.5rem; background: #493541; border: 1px solid #6D4C5E; border-radius: 12px; text-align: center;">
     <img src="/svg/olenna-emblem-dark.svg" alt="Olenna Emblem Dark" style="width: 56px; height: 50px; margin: 0 auto; object-fit: contain;" />
-    <p style="margin-top: 0.5rem; font-size: 0.75rem; color: #FFFAF7;">Monogram Inverted</p>
+    <p style="margin-top: 0.5rem; font-size: 0.75rem; color: #FFFAF7;">Monogram Inverted (Dark)</p>
   </div>
 </div>
 
@@ -49,9 +49,9 @@ Compact circular monogram for mobile app icons, favicons, avatar watermarks, and
 Serif typographic wordmark for clean, compact layouts, order confirmations, and receipts.
 
 <div style="padding: 1.5rem 2rem; background: #FFFAF7; border: 1px solid rgba(73, 53, 65, 0.12); border-radius: 12px; margin: 1rem 0;">
-  <img src="/images/logo/olenna-wordmark.webp" alt="Olenna Wordmark" style="max-height: 44px; object-fit: contain;" />
+  <img src="/svg/olenna-wordmark-light.svg" alt="Olenna Wordmark" style="max-height: 44px; object-fit: contain;" />
   <p style="margin-top: 0.75rem; font-size: 0.8125rem; color: #5C4C56;">Editorial Wordmark Lockup</p>
-  <code style="font-size: 0.75rem;">/images/logo/olenna-wordmark.webp</code>
+  <code style="font-size: 0.75rem;">/svg/olenna-wordmark-light.svg</code>
 </div>
 
 ---
