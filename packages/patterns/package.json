@@ -1,8 +1,15 @@
 {
   "name": "@olenna/patterns",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Reusable retail, store discovery, and luxury editorial patterns for Olenna StudioX",
-  "keywords": ["olenna", "patterns", "retail", "ecommerce", "luxury", "design-system"],
+  "keywords": [
+    "olenna",
+    "patterns",
+    "retail",
+    "ecommerce",
+    "luxury",
+    "design-system"
+  ],
   "license": "MIT",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

@@ -1,8 +1,13 @@
 {
   "name": "@olenna/tokens",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Design tokens, CSS variables, and platform-neutral token sources for Olenna StudioX",
-  "keywords": ["olenna", "design-tokens", "css-variables", "design-system"],
+  "keywords": [
+    "olenna",
+    "design-tokens",
+    "css-variables",
+    "design-system"
+  ],
   "license": "MIT",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",

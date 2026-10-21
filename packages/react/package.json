@@ -1,8 +1,14 @@
 {
   "name": "@olenna/react",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Accessible, theme-aware React component library for Olenna StudioX",
-  "keywords": ["olenna", "react", "components", "design-system", "accessibility"],
+  "keywords": [
+    "olenna",
+    "react",
+    "components",
+    "design-system",
+    "accessibility"
+  ],
   "license": "MIT",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

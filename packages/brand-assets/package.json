@@ -1,8 +1,14 @@
 {
   "name": "@olenna/brand-assets",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Approved brand identity assets, logos, emblems, and usage metadata for Olenna StudioX",
-  "keywords": ["olenna", "brand-assets", "design-system", "logos", "identity"],
+  "keywords": [
+    "olenna",
+    "brand-assets",
+    "design-system",
+    "logos",
+    "identity"
+  ],
   "license": "MIT",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
