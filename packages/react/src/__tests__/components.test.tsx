@@ -21,7 +21,9 @@ import {
   AccordionItem,
   Switch,
   ThemeProvider,
-  useTheme
+  useTheme,
+  ToastProvider,
+  useToast
 } from '../index';
 
 describe('@olenna/react Components', () => {
@@ -217,6 +219,58 @@ describe('@olenna/react Components', () => {
       const link = screen.getByRole('link', { name: /olenna/i });
       expect(link).toHaveAttribute('href', '/');
       expect(screen.getByText(/everyday elegance, thoughtfully curated/i)).toBeInTheDocument();
+    });
+  });
+
+  describe('Toast & Commerce Coming Soon', () => {
+    function ToastTestConsumer() {
+      const { showComingSoon, showToast } = useToast();
+      return (
+        <div>
+          <button type="button" onClick={() => showComingSoon()}>
+            Trigger Coming Soon
+          </button>
+          <button type="button" onClick={() => showToast('Order confirmed')}>
+            Trigger Order Toast
+          </button>
+        </div>
+      );
+    }
+
+    it('shows coming soon notification when showComingSoon is invoked and hides on dismiss', () => {
+      render(
+        <ToastProvider>
+          <ToastTestConsumer />
+        </ToastProvider>
+      );
+
+      expect(screen.queryByRole('alert')).not.toBeInTheDocument();
+
+      fireEvent.click(screen.getByRole('button', { name: /trigger coming soon/i }));
+
+      expect(screen.getByRole('alert')).toBeInTheDocument();
+      expect(screen.getByText('Online Store Coming Soon')).toBeInTheDocument();
+      expect(screen.getByText(/Our online shop will be available soon/i)).toBeInTheDocument();
+
+      const closeBtn = screen.getByRole('button', { name: /close notification/i });
+      fireEvent.click(closeBtn);
+
+      expect(screen.queryByRole('alert')).not.toBeInTheDocument();
+    });
+
+    it('intercepts click on Shop Online links and triggers coming soon toast', () => {
+      render(
+        <ToastProvider>
+          <a href="https://shop.olenna.in" target="_blank" rel="noopener noreferrer">
+            Shop Online
+          </a>
+        </ToastProvider>
+      );
+
+      fireEvent.click(screen.getByRole('link', { name: /shop online/i }));
+
+      expect(screen.getByRole('alert')).toBeInTheDocument();
+      expect(screen.getByText('Online Store Coming Soon')).toBeInTheDocument();
     });
   });
 });
