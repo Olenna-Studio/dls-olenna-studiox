@@ -1,8 +1,14 @@
 {
   "name": "@olenna/styles",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "CSS stylesheet, resets, utilities, theme classes, and Tailwind preset for Olenna StudioX",
-  "keywords": ["olenna", "styles", "css", "tailwind-preset", "design-system"],
+  "keywords": [
+    "olenna",
+    "styles",
+    "css",
+    "tailwind-preset",
+    "design-system"
+  ],
   "license": "MIT",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
