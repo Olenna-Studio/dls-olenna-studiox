@@ -26,10 +26,10 @@ export const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>((
   const isDisabled = disabled || isLoading;
 
   const sizePixels: Record<ButtonSize, string> = {
-    sm: 'var(--olenna-component-button-height-sm, 2rem)',
-    md: 'var(--olenna-component-button-height-md, 2.5rem)',
-    lg: 'var(--olenna-component-button-height-lg, 3rem)',
-    icon: 'var(--olenna-component-button-height-md, 2.5rem)'
+    sm: 'var(--olenna-component-button-height-sm, 2.25rem)',
+    md: 'var(--olenna-component-button-height-md, 2.75rem)',
+    lg: 'var(--olenna-component-button-height-lg, 3.25rem)',
+    icon: 'var(--olenna-component-button-height-md, 2.75rem)'
   };
 
   const dim = sizePixels[size];

@@ -18,11 +18,11 @@ Test button styles, focus states, and sizes live. Use the theme selector on the 
   </div>
 </ComponentPreview>
 
-<ComponentPreview title="Button Sizes" description="Standardized heights: Small (32px), Medium (40px), Large (48px)">
+<ComponentPreview title="Button Sizes" description="Standardized luxury heights & internal padding: Small (36px / 0.5rem 1.125rem), Medium (44px / 0.6875rem 1.5rem), Large (52px / 0.875rem 2rem)">
   <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;">
-    <button class="preview-btn preview-btn--primary preview-btn--sm">Small (32px)</button>
-    <button class="preview-btn preview-btn--primary preview-btn--md">Medium (40px)</button>
-    <button class="preview-btn preview-btn--primary preview-btn--lg">Large (48px)</button>
+    <button class="preview-btn preview-btn--primary preview-btn--sm">Small (36px)</button>
+    <button class="preview-btn preview-btn--primary preview-btn--md">Medium (44px)</button>
+    <button class="preview-btn preview-btn--primary preview-btn--lg">Large (52px)</button>
   </div>
 </ComponentPreview>
 
@@ -63,9 +63,9 @@ import { Button, IconButton } from "@olenna/react";
 All standard buttons default to the signature Olenna **pill radius** (`9999px`):
 
 ```tsx
-<Button size="sm">Small (32px)</Button>
-<Button size="md">Medium (40px)</Button>
-<Button size="lg">Large (48px)</Button>
+<Button size="sm">Small (36px / 0.5rem 1.125rem)</Button>
+<Button size="md">Medium (44px / 0.6875rem 1.5rem)</Button>
+<Button size="lg">Large (52px / 0.875rem 2rem)</Button>
 
 <!-- Loading State with Spinner and duplicate prevention -->
 <Button isLoading>Processing...</Button>

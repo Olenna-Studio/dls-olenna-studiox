@@ -22,6 +22,7 @@
     },
     "./css": "./src/index.css",
     "./base.css": "./src/base.css",
+    "./button.css": "./src/button.css",
     "./utilities.css": "./src/utilities.css",
     "./tailwind": {
       "types": "./dist/index.d.ts",

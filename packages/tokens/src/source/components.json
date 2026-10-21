@@ -3,14 +3,24 @@
   "component": {
     "button": {
       "height": {
-        "sm": { "value": "2rem", "type": "dimension" },
-        "md": { "value": "2.5rem", "type": "dimension" },
-        "lg": { "value": "3rem", "type": "dimension" }
+        "sm": { "value": "2.25rem", "type": "dimension" },
+        "md": { "value": "2.75rem", "type": "dimension" },
+        "lg": { "value": "3.25rem", "type": "dimension" }
+      },
+      "padding": {
+        "sm": { "value": "0.5rem 1.125rem", "type": "dimension" },
+        "md": { "value": "0.6875rem 1.5rem", "type": "dimension" },
+        "lg": { "value": "0.875rem 2rem", "type": "dimension" }
       },
       "paddingX": {
-        "sm": { "value": "0.875rem", "type": "dimension" },
-        "md": { "value": "1.25rem", "type": "dimension" },
-        "lg": { "value": "1.75rem", "type": "dimension" }
+        "sm": { "value": "1.125rem", "type": "dimension" },
+        "md": { "value": "1.5rem", "type": "dimension" },
+        "lg": { "value": "2rem", "type": "dimension" }
+      },
+      "paddingY": {
+        "sm": { "value": "0.5rem", "type": "dimension" },
+        "md": { "value": "0.6875rem", "type": "dimension" },
+        "lg": { "value": "0.875rem", "type": "dimension" }
       },
       "radius": {
         "sm": { "value": "9999px", "type": "dimension" },

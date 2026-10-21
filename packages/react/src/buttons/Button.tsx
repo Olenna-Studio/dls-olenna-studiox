@@ -31,10 +31,10 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({
   const isDisabled = disabled || isLoading;
 
   const sizeMetrics: Record<ButtonSize, { height: string; padding: string; fontSize: string }> = {
-    sm: { height: 'var(--olenna-component-button-height-sm, 2rem)', padding: '0 0.875rem', fontSize: '0.8125rem' },
-    md: { height: 'var(--olenna-component-button-height-md, 2.5rem)', padding: '0 1.25rem', fontSize: '0.875rem' },
-    lg: { height: 'var(--olenna-component-button-height-lg, 3rem)', padding: '0 1.75rem', fontSize: '1rem' },
-    icon: { height: 'var(--olenna-component-button-height-md, 2.5rem)', padding: '0', fontSize: '1rem' }
+    sm: { height: 'var(--olenna-component-button-height-sm, 2.25rem)', padding: 'var(--olenna-component-button-padding-sm, 0.5rem 1.125rem)', fontSize: '0.8125rem' },
+    md: { height: 'var(--olenna-component-button-height-md, 2.75rem)', padding: 'var(--olenna-component-button-padding-md, 0.6875rem 1.5rem)', fontSize: '0.875rem' },
+    lg: { height: 'var(--olenna-component-button-height-lg, 3.25rem)', padding: 'var(--olenna-component-button-padding-lg, 0.875rem 2rem)', fontSize: '1rem' },
+    icon: { height: 'var(--olenna-component-button-height-md, 2.75rem)', padding: '0', fontSize: '1rem' }
   };
 
   const currentSize = sizeMetrics[size];
@@ -98,19 +98,22 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({
     display: 'inline-flex',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: '0.5rem',
+    gap: size === 'sm' ? '0.375rem' : size === 'lg' ? '0.625rem' : '0.5rem',
     width: fullWidth ? '100%' : isSquareOrCircle ? currentSize.height : 'auto',
+    minHeight: variant === 'link' ? 'auto' : currentSize.height,
     height: variant === 'link' ? 'auto' : currentSize.height,
     padding: variant === 'link' || isSquareOrCircle ? 0 : currentSize.padding,
     fontSize: currentSize.fontSize,
     fontFamily: 'var(--olenna-typography-fontFamily-sans)',
     fontWeight: 'var(--olenna-typography-fontWeight-medium)',
     letterSpacing: '0.02em',
+    lineHeight: 1.25,
     borderRadius: variant === 'link' ? 0 : 'var(--olenna-component-button-radius, var(--olenna-border-radius-full, 9999px))',
     cursor: isDisabled ? 'not-allowed' : 'pointer',
     transition: 'all var(--olenna-motion-duration-fast) var(--olenna-motion-easing-standard)',
     userSelect: 'none',
     boxSizing: 'border-box',
+    whiteSpace: 'nowrap',
     ...getVariantStyles(),
     ...style
   };
