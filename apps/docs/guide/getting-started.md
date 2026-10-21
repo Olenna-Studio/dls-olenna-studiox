@@ -123,7 +123,7 @@ Or switch declaratively in HTML:
 
 ## 5. Running the Monorepo Locally
 
-If you are developing inside the `olenna-studiox` repository, launch any target directly:
+If you are developing inside the `dls-olenna-studiox` repository, launch any target directly:
 
 ```bash
 # Documentation website (VitePress) -> http://localhost:5173

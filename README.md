@@ -3,9 +3,9 @@
 > **Everyday elegance, thoughtfully curated.**  
 > The single source of truth for Olenna's visual identity, design tokens, accessible React components, and luxury retail patterns.
 
-[![CI Status](https://github.com/olenna/olenna-studiox/actions/workflows/ci.yml/badge.svg)](https://github.com/olenna/olenna-studiox/actions)
+[![CI Status](https://github.com/olenna/dls-olenna-studiox/actions/workflows/ci.yml/badge.svg)](https://github.com/olenna/dls-olenna-studiox/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version: v1.0.0](https://img.shields.io/badge/version-1.0.0-493541.svg)](https://github.com/olenna/olenna-studiox)
+[![Version: v1.0.0](https://img.shields.io/badge/version-1.0.0-493541.svg)](https://github.com/olenna/dls-olenna-studiox)
 
 ---
 

@@ -16,8 +16,8 @@ Before writing code, review our core principles:
 
 1. **Fork and Clone**:
    ```bash
-   git clone https://github.com/olenna/olenna-studiox.git
-   cd olenna-studiox
+   git clone https://github.com/olenna/dls-olenna-studiox.git
+   cd dls-olenna-studiox
    ```
 
 2. **Install Workspace Dependencies**:
