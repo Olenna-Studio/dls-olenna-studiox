@@ -8,22 +8,22 @@ The `<Logo />` component renders authentic Olenna identity assets with pre-calcu
   <div style="display: flex; flex-direction: column; gap: 2rem; width: 100%; align-items: center;">
     <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
       <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--olenna-color-text-muted);">Horizontal Navigation Lockup</span>
-      <img src="/svg/olenna-horizontal-light.svg" alt="Olenna Horizontal Logo" style="max-height: 48px; object-fit: contain;" />
+      <img src="/olenna-horizontal.webp" alt="Olenna Horizontal Logo" style="max-height: 48px; object-fit: contain;" />
     </div>
 
     <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
       <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--olenna-color-text-muted);">Stacked Atelier Hero Lockup</span>
-      <img src="/svg/olenna-logo-full-light.svg" alt="Olenna Stacked Logo" style="max-height: 120px; object-fit: contain;" />
+      <img src="/olenna-logo-full.webp" alt="Olenna Stacked Logo" style="max-height: 120px; object-fit: contain;" />
     </div>
 
     <div style="display: flex; gap: 3rem; align-items: center; flex-wrap: wrap; justify-content: center;">
       <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
         <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--olenna-color-text-muted);">Wordmark</span>
-        <img src="/svg/olenna-wordmark-light.svg" alt="Olenna Wordmark" style="max-height: 36px; object-fit: contain;" />
+        <img src="/olenna-wordmark.webp" alt="Olenna Wordmark" style="max-height: 36px; object-fit: contain;" />
       </div>
       <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
         <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--olenna-color-text-muted);">Botanical Emblem</span>
-        <img src="/svg/olenna-emblem-light.svg" alt="Olenna Emblem" style="max-height: 48px; object-fit: contain;" />
+        <img src="/olenna-emblem.webp" alt="Olenna Emblem" style="max-height: 48px; object-fit: contain;" />
       </div>
     </div>
   </div>
