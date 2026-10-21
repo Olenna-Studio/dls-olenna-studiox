@@ -85,6 +85,7 @@ export const Dialog: React.FC<DialogProps> = ({
           width: '100%',
           maxWidth: maxWidths[maxWidth],
           backgroundColor: 'var(--olenna-color-surface-elevated)',
+          color: 'var(--olenna-color-text-primary)',
           border: '1px solid var(--olenna-color-border-default)',
           borderRadius: 'var(--olenna-border-radius-lg)',
           boxShadow: 'var(--olenna-shadow-2xl)',

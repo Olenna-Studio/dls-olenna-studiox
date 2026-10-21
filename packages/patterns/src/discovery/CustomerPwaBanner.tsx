@@ -27,8 +27,8 @@ export const CustomerPwaBanner: React.FC<CustomerPwaBannerProps> = ({
       role="banner"
       style={{
         borderRadius: 'var(--olenna-border-radius-md, 8px)',
-        backgroundColor: 'var(--olenna-color-brand-blush-100, #F5E3EA)',
-        border: '1px solid var(--olenna-color-brand-mauve-200, #DCC5D8)',
+        backgroundColor: 'var(--olenna-color-surface-accent, #F5E3EA)',
+        border: '1px solid var(--olenna-color-border-accent, #DCC5D8)',
         padding: '1.25rem 1.5rem',
         display: 'flex',
         alignItems: 'center',
@@ -62,10 +62,10 @@ export const CustomerPwaBanner: React.FC<CustomerPwaBannerProps> = ({
           </div>
         )}
         <div>
-          <h4 style={{ margin: 0, fontFamily: 'var(--olenna-typography-fontFamily-serif, serif)', fontSize: '1.125rem', color: 'var(--olenna-color-brand-plum-900, #493541)' }}>
+          <h4 style={{ margin: 0, fontFamily: 'var(--olenna-typography-fontFamily-serif, serif)', fontSize: '1.125rem', color: 'var(--olenna-color-text-primary, #261C22)' }}>
             {title}
           </h4>
-          <p style={{ margin: '0.25rem 0 0 0', fontSize: '0.8125rem', color: 'var(--olenna-color-brand-plum-800, #593D4E)', lineHeight: 1.4 }}>
+          <p style={{ margin: '0.25rem 0 0 0', fontSize: '0.8125rem', color: 'var(--olenna-color-text-secondary, #5C4C56)', lineHeight: 1.4 }}>
             {description}
           </p>
         </div>
@@ -77,10 +77,10 @@ export const CustomerPwaBanner: React.FC<CustomerPwaBannerProps> = ({
             type="button"
             onClick={onInstall}
             style={{
-              backgroundColor: 'var(--olenna-color-brand-plum-900, #493541)',
-              color: 'var(--olenna-color-brand-ivory-50, #FFFAF7)',
+              backgroundColor: 'var(--olenna-color-action-primary-default, #493541)',
+              color: 'var(--olenna-color-action-primary-text, #FFFAF7)',
               padding: '0.5rem 1.25rem',
-              borderRadius: 'var(--olenna-border-radius-xs, 4px)',
+              borderRadius: 'var(--olenna-border-radius-full, 9999px)',
               border: 'none',
               fontSize: '0.8125rem',
               fontWeight: 600,
@@ -99,7 +99,7 @@ export const CustomerPwaBanner: React.FC<CustomerPwaBannerProps> = ({
             style={{
               background: 'none',
               border: 'none',
-              color: 'var(--olenna-color-brand-plum-700, #6D4C5E)',
+              color: 'var(--olenna-color-text-muted, #8E7A87)',
               cursor: 'pointer',
               padding: '0.25rem'
             }}

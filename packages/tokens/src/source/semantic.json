@@ -94,21 +94,21 @@
         "accent": { "value": "#3E2B38", "type": "color", "description": "Dark mode accent surface" }
       },
       "border": {
-        "default": { "value": "#493541", "type": "color", "description": "Dark mode standard border" },
-        "strong": { "value": "#6D4C5E", "type": "color", "description": "Dark mode strong border" },
-        "subtle": { "value": "#382932", "type": "color", "description": "Dark mode subtle divider" },
-        "accent": { "value": "#9E7958", "type": "color", "description": "Dark mode champagne border" }
+        "default": { "value": "rgba(223, 199, 176, 0.18)", "type": "color", "description": "Dark mode visible border with subtle champagne luminescence" },
+        "strong": { "value": "rgba(223, 199, 176, 0.35)", "type": "color", "description": "Dark mode strong border" },
+        "subtle": { "value": "rgba(223, 199, 176, 0.10)", "type": "color", "description": "Dark mode subtle divider" },
+        "accent": { "value": "{color.brand.champagne.400}", "type": "color", "description": "Dark mode champagne border" }
       },
       "action": {
         "primary": {
-          "default": { "value": "{color.brand.champagne.400}", "type": "color" },
+          "default": { "value": "{color.brand.champagne.400}", "type": "color", "description": "Primary action button in dark mode" },
           "hover": { "value": "{color.brand.champagne.200}", "type": "color" },
           "active": { "value": "#FFFAF7", "type": "color" },
           "text": { "value": "#211B17", "type": "color" }
         },
         "secondary": {
-          "default": { "value": "{color.brand.mauve.300}", "type": "color" },
-          "hover": { "value": "{color.brand.mauve.200}", "type": "color" },
+          "default": { "value": "rgba(220, 197, 216, 0.18)", "type": "color", "description": "Secondary action button in dark mode" },
+          "hover": { "value": "rgba(220, 197, 216, 0.30)", "type": "color" },
           "text": { "value": "#FFFAF7", "type": "color" }
         },
         "tertiary": {

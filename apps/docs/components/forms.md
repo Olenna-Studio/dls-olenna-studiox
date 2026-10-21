@@ -1,6 +1,41 @@
 # Form Controls
 
-Accessible form controls linking labels, descriptions, and error alerts via ARIA attributes.
+Accessible form controls linking labels, descriptions, and error alerts via ARIA attributes. Designed with subtle borders, generous tap targets, and high-contrast dark mode states.
+
+## Interactive Previews
+
+<ComponentPreview title="Form Fields & Inputs" description="Text inputs, email fields, and labels with error state integration">
+  <div style="display: flex; flex-direction: column; gap: 1.25rem; max-width: 480px; width: 100%;">
+    <div class="preview-form-group">
+      <label class="preview-label">Client Email <span style="color: var(--olenna-color-status-danger-text);">*</span></label>
+      <input class="preview-input" type="email" placeholder="concierge@olenna.com" value="concierge@olenna.com" />
+      <span class="preview-help-text">We will send your boutique booking confirmation here.</span>
+    </div>
+    
+    <div class="preview-form-group">
+      <label class="preview-label">Search Boutique</label>
+      <input class="preview-input" type="search" placeholder="Search fragrances, haute couture..." />
+    </div>
+  </div>
+</ComponentPreview>
+
+<ComponentPreview title="Selection & Toggle Controls" description="Checkboxes, radios, and switches with accessible keyboard focus">
+  <div style="display: flex; flex-direction: column; gap: 1rem; width: 100%;">
+    <label class="preview-checkbox-row">
+      <span class="preview-checkbox-box">✓</span>
+      <span>I agree to the Olenna VIP Privileges Terms & Conditions</span>
+    </label>
+    
+    <label class="preview-switch-row">
+      <div class="preview-switch-track">
+        <div class="preview-switch-thumb"></div>
+      </div>
+      <span>Bespoke concierge notifications enabled</span>
+    </label>
+  </div>
+</ComponentPreview>
+
+---
 
 ## Import
 

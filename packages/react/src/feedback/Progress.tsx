@@ -31,7 +31,8 @@ export const Progress: React.FC<ProgressProps> = ({
         position: 'relative',
         width: '100%',
         height: '0.5rem',
-        backgroundColor: 'var(--olenna-color-neutral-200)',
+        backgroundColor: 'var(--olenna-color-surface-subtle)',
+        border: '1px solid var(--olenna-color-border-subtle)',
         borderRadius: 'var(--olenna-border-radius-full)',
         overflow: 'hidden',
         ...style

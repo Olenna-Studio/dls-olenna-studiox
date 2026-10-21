@@ -1,6 +1,32 @@
 # Overlays & Containers
 
-Modals, slide-out drawers, cards, panels, accordions, and disclosures.
+Modals, slide-out drawers, cards, panels, accordions, and disclosures. Containers feature elevated surfaces that dynamically adjust luminance between light and dark themes.
+
+## Interactive Previews
+
+<ComponentPreview title="Card Surfaces" description="Surface hierarchy across default, elevated, and outline cards">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; width: 100%;">
+    <div class="preview-card preview-card--default">
+      <div style="font-weight: 600; font-size: 1rem; margin-bottom: 0.25rem;">Default Card</div>
+      <p style="font-size: 0.875rem; color: var(--olenna-color-text-secondary); margin: 0 0 1rem 0;">Subtle border with minimal elevation for list items and grids.</p>
+      <button class="preview-btn preview-btn--secondary preview-btn--sm">View Details</button>
+    </div>
+    
+    <div class="preview-card preview-card--elevated">
+      <div style="font-weight: 600; font-size: 1rem; margin-bottom: 0.25rem;">Elevated Card</div>
+      <p style="font-size: 0.875rem; color: var(--olenna-color-text-secondary); margin: 0 0 1rem 0;">Enhanced shadow for featured promotions and hero callouts.</p>
+      <button class="preview-btn preview-btn--primary preview-btn--sm">Explore Collection</button>
+    </div>
+    
+    <div class="preview-card preview-card--outline">
+      <div style="font-weight: 600; font-size: 1rem; margin-bottom: 0.25rem;">Outline Card</div>
+      <p style="font-size: 0.875rem; color: var(--olenna-color-text-secondary); margin: 0 0 1rem 0;">Transparent background with crisp border accents.</p>
+      <button class="preview-btn preview-btn--outline preview-btn--sm">Learn More</button>
+    </div>
+  </div>
+</ComponentPreview>
+
+---
 
 ## Import
 

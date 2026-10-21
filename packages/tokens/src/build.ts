@@ -114,7 +114,7 @@ export function buildTokens() {
     css += `  ${t.cssVar}: ${t.value};\n`;
   });
 
-  css += `}\n\n[data-theme="dark"],\n.olenna-theme-dark {\n  /* Semantic Overrides (Dark) */\n`;
+  css += `}\n\n[data-theme="dark"],\n.olenna-theme-dark,\nhtml.dark,\n.dark,\n[data-theme="dark"] body {\n  /* Semantic Overrides (Dark) */\n`;
   flatSemanticDark.forEach((t) => {
     css += `  ${t.cssVar}: ${t.value};${t.description ? ` /* ${t.description} */` : ''}\n`;
   });

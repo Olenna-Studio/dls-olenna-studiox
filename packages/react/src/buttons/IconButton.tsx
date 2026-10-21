@@ -51,22 +51,22 @@ export const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>((
       case 'outline':
         return {
           backgroundColor: 'transparent',
-          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-brand-plum-900, #493541)',
-          border: '1px solid rgba(73, 53, 65, 0.3)'
+          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-text-primary)',
+          border: '1px solid var(--olenna-color-border-strong)'
         };
       case 'ghost':
       case 'tertiary':
         return {
           backgroundColor: 'transparent',
-          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-brand-plum-900, #493541)',
+          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-text-primary)',
           border: '1px solid transparent'
         };
       case 'circle':
         return {
-          backgroundColor: '#FFFFFF',
-          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-brand-plum-900, #493541)',
-          border: '1px solid rgba(73, 53, 65, 0.15)',
-          boxShadow: '0 1px 2px 0 rgba(73, 53, 65, 0.05)'
+          backgroundColor: 'var(--olenna-color-surface-elevated, #FFFFFF)',
+          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-text-primary)',
+          border: '1px solid var(--olenna-color-border-default)',
+          boxShadow: 'var(--olenna-shadow-sm, 0 1px 2px 0 rgba(73, 53, 65, 0.05))'
         };
       case 'destructive':
         return {

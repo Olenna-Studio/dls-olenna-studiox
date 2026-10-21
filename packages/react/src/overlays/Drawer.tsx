@@ -65,6 +65,7 @@ export const Drawer: React.FC<DrawerProps> = ({
           maxWidth: '24rem',
           height: '100%',
           backgroundColor: 'var(--olenna-color-surface-elevated)',
+          color: 'var(--olenna-color-text-primary)',
           boxShadow: 'var(--olenna-shadow-2xl)',
           display: 'flex',
           flexDirection: 'column',

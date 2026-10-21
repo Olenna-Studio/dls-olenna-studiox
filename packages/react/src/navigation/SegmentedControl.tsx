@@ -31,9 +31,9 @@ export const SegmentedControl: React.FC<SegmentedControlProps> = ({
       style={{
         display: 'inline-flex',
         padding: '0.25rem',
-        backgroundColor: 'var(--olenna-color-neutral-100)',
+        backgroundColor: 'var(--olenna-color-surface-subtle)',
         borderRadius: 'var(--olenna-border-radius-sm)',
-        border: '1px solid var(--olenna-color-border-subtle)',
+        border: '1px solid var(--olenna-color-border-default)',
         gap: '0.25rem',
         ...style
       }}

@@ -48,7 +48,8 @@ export const Stepper: React.FC<StepperProps> = ({
                     justifyContent: 'center',
                     fontSize: '0.75rem',
                     fontWeight: 600,
-                    backgroundColor: isCompleted || isCurrent ? 'var(--olenna-color-action-primary-default)' : 'var(--olenna-color-neutral-200)',
+                    backgroundColor: isCompleted || isCurrent ? 'var(--olenna-color-action-primary-default)' : 'var(--olenna-color-surface-subtle)',
+                    border: isCompleted || isCurrent ? 'none' : '1px solid var(--olenna-color-border-strong)',
                     color: isCompleted || isCurrent ? 'var(--olenna-color-action-primary-text)' : 'var(--olenna-color-text-secondary)',
                     transition: 'all var(--olenna-motion-duration-fast)'
                   }}
@@ -70,7 +71,7 @@ export const Stepper: React.FC<StepperProps> = ({
                     flex: 1,
                     height: '2px',
                     margin: '0 0.75rem',
-                    backgroundColor: idx < activeStep ? 'var(--olenna-color-action-primary-default)' : 'var(--olenna-color-neutral-200)',
+                    backgroundColor: idx < activeStep ? 'var(--olenna-color-action-primary-default)' : 'var(--olenna-color-border-default)',
                     transition: 'background-color var(--olenna-motion-duration-fast)'
                   }}
                 />

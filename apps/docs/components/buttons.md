@@ -2,6 +2,32 @@
 
 Buttons trigger actions or navigation events across the interface, featuring Olenna's signature pill border-radius (`9999px`) and high-contrast color hierarchy.
 
+## Interactive Previews
+
+Test button styles, focus states, and sizes live. Use the theme selector on the preview container to toggle between Light and Dark mode:
+
+<ComponentPreview title="Button Variants" description="Core visual hierarchy across all 8 variants">
+  <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;">
+    <button class="preview-btn preview-btn--primary">Shop Collection</button>
+    <button class="preview-btn preview-btn--secondary">View Lookbook</button>
+    <button class="preview-btn preview-btn--outline">Store Locator</button>
+    <button class="preview-btn preview-btn--ghost">Filter Options</button>
+    <button class="preview-btn preview-btn--destructive">Delete Item</button>
+    <button class="preview-btn preview-btn--circle" aria-label="Next slide">→</button>
+    <button class="preview-btn preview-btn--circle" aria-label="Add to wishlist">♥</button>
+  </div>
+</ComponentPreview>
+
+<ComponentPreview title="Button Sizes" description="Standardized heights: Small (32px), Medium (40px), Large (48px)">
+  <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;">
+    <button class="preview-btn preview-btn--primary preview-btn--sm">Small (32px)</button>
+    <button class="preview-btn preview-btn--primary preview-btn--md">Medium (40px)</button>
+    <button class="preview-btn preview-btn--primary preview-btn--lg">Large (48px)</button>
+  </div>
+</ComponentPreview>
+
+---
+
 ## Import
 
 ```tsx
@@ -11,10 +37,10 @@ import { Button, IconButton } from "@olenna/react";
 ## Button Variants
 
 `Button` supports 8 distinct variants matching production design:
-- `primary`: Deep Plum (`#493541`) with white text, transitioning to Midnight Plum (`#33232D`) on hover.
-- `secondary`: Soft Mauve (`#DCC5D8`) fill with Midnight Plum (`#33232D`) text, transitioning to Mauve 400 (`#C5A5BF`).
-- `outline`: Fine plum-tinted border (`border-brand-plum-900/30`) with subtle hover fill.
-- `ghost` / `tertiary`: Transparent button with plum text for minimal action triggers.
+- `primary`: Deep Plum (`#493541`) with ivory text, transitioning to Mauve / Midnight Plum on hover.
+- `secondary`: Soft Mauve / Champagne accent fill with high-contrast text.
+- `outline`: Fine plum or champagne border with subtle hover fill.
+- `ghost` / `tertiary`: Transparent button with plum / ivory text for minimal action triggers.
 - `circle`: Circular button (`w-10 h-10 rounded-full`) with subtle border for icon-only action triggers.
 - `destructive`: Red danger fill for irreversible actions.
 - `link`: Inline typographic button with underline.
@@ -25,12 +51,14 @@ import { Button, IconButton } from "@olenna/react";
 <Button variant="outline">Store Locator</Button>
 <Button variant="ghost">Filter Options</Button>
 <Button variant="destructive">Delete Item</Button>
-<Button variant="link">Read Terms</Button>
+<Button variant="circle" aria-label="Next">
+  <span aria-hidden="true">→</span>
+</Button>
 ```
 
 ---
 
-## Sizes & Shapes
+## Sizes & States
 
 All standard buttons default to the signature Olenna **pill radius** (`9999px`):
 
@@ -47,22 +75,6 @@ All standard buttons default to the signature Olenna **pill radius** (`9999px`):
 
 <!-- Full Width Container -->
 <Button fullWidth>Checkout (€340.00)</Button>
-```
-
----
-
-## Circular Action Buttons (`circle` / `IconButton`)
-
-For carousel navigation, wishlist toggles, and modal dismissals:
-
-```tsx
-<Button variant="circle" aria-label="Next slide">
-  <span aria-hidden="true">→</span>
-</Button>
-
-<IconButton aria-label="Close dialog" rounded>
-  <span aria-hidden="true">✕</span>
-</IconButton>
 ```
 
 ---

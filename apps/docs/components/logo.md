@@ -2,6 +2,35 @@
 
 The `<Logo />` component renders authentic Olenna identity assets with pre-calculated responsive dimensions, intrinsic aspect ratios, optional editorial tagline, and accessible link behavior.
 
+## Visual Previews
+
+<ComponentPreview title="Approved Brand Lockups" description="Visual preview across horizontal, stacked, wordmark, and emblem marks in Light and Dark themes">
+  <div style="display: flex; flex-direction: column; gap: 2rem; width: 100%; align-items: center;">
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+      <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--olenna-color-text-muted);">Horizontal Navigation Lockup</span>
+      <img src="/olenna-horizontal.webp" alt="Olenna Horizontal Logo" style="max-height: 48px; object-fit: contain;" />
+    </div>
+
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+      <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--olenna-color-text-muted);">Stacked Atelier Hero Lockup</span>
+      <img src="/olenna-logo-full.webp" alt="Olenna Stacked Logo" style="max-height: 120px; object-fit: contain;" />
+    </div>
+
+    <div style="display: flex; gap: 3rem; align-items: center; flex-wrap: wrap; justify-content: center;">
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+        <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--olenna-color-text-muted);">Wordmark</span>
+        <img src="/olenna-wordmark.webp" alt="Olenna Wordmark" style="max-height: 36px; object-fit: contain;" />
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+        <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--olenna-color-text-muted);">Botanical Emblem</span>
+        <img src="/olenna-emblem.webp" alt="Olenna Emblem" style="max-height: 48px; object-fit: contain;" />
+      </div>
+    </div>
+  </div>
+</ComponentPreview>
+
+---
+
 ## Import
 
 ```tsx

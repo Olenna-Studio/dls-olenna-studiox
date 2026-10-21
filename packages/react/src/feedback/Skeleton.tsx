@@ -25,7 +25,8 @@ export const Skeleton: React.FC<SkeletonProps> = ({
         width: circle ? height : width,
         height,
         borderRadius: circle ? '50%' : borderRadius,
-        backgroundColor: 'var(--olenna-color-neutral-200)',
+        backgroundColor: 'var(--olenna-color-surface-subtle)',
+        border: '1px solid var(--olenna-color-border-subtle)',
         opacity: 0.6,
         animation: 'pulse 1.5s ease-in-out infinite',
         ...style

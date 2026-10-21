@@ -70,7 +70,7 @@ export const Switch: React.FC<SwitchProps> = ({
           width: '2.5rem',
           height: '1.375rem',
           padding: 0,
-          backgroundColor: isChecked ? 'var(--olenna-color-action-primary-default)' : 'var(--olenna-color-neutral-300)',
+          backgroundColor: isChecked ? 'var(--olenna-color-action-primary-default)' : 'var(--olenna-color-border-strong, #8E7A87)',
           borderRadius: 'var(--olenna-border-radius-full)',
           border: 'none',
           cursor: disabled ? 'not-allowed' : 'pointer',
@@ -85,14 +85,14 @@ export const Switch: React.FC<SwitchProps> = ({
             left: isChecked ? 'calc(100% - 1.125rem - 2px)' : '2px',
             width: '1.125rem',
             height: '1.125rem',
-            backgroundColor: '#FFFFFF',
+            backgroundColor: isChecked ? 'var(--olenna-color-action-primary-text, #FFFFFF)' : 'var(--olenna-color-surface-elevated, #FFFFFF)',
             borderRadius: '50%',
             boxShadow: 'var(--olenna-shadow-sm)',
             transition: 'left var(--olenna-motion-duration-fast) var(--olenna-motion-easing-standard)'
           }}
         />
       </button>
-      {label && <span>{label}</span>}
+      {label && <span style={{ color: disabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-text-primary)' }}>{label}</span>}
     </label>
   );
 };

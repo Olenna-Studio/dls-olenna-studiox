@@ -20,29 +20,29 @@ export const Badge: React.FC<BadgeProps> = ({
 }) => {
   const variantStyles: Record<BadgeVariant, { bg: string; color: string; border: string }> = {
     default: {
-      bg: 'var(--olenna-color-neutral-100)',
+      bg: 'var(--olenna-color-surface-subtle)',
+      color: 'var(--olenna-color-text-primary)',
+      border: '1px solid var(--olenna-color-border-subtle)'
+    },
+    blush: {
+      bg: 'var(--olenna-color-surface-accent, #F5E3EA)',
       color: 'var(--olenna-color-text-primary)',
       border: 'transparent'
     },
-    blush: {
-      bg: 'var(--olenna-color-brand-blush-100)',
-      color: 'var(--olenna-color-brand-plum-900)',
-      border: 'transparent'
-    },
     champagne: {
-      bg: 'var(--olenna-color-brand-champagne-100)',
-      color: 'var(--olenna-color-brand-champagne-600)',
-      border: '1px solid var(--olenna-color-brand-champagne-200)'
+      bg: 'rgba(196, 161, 129, 0.15)',
+      color: 'var(--olenna-color-brand-champagne-400, #C4A181)',
+      border: '1px solid var(--olenna-color-border-accent)'
     },
     plum: {
-      bg: 'var(--olenna-color-brand-plum-900)',
-      color: 'var(--olenna-color-brand-ivory-50)',
+      bg: 'var(--olenna-color-action-primary-default)',
+      color: 'var(--olenna-color-action-primary-text)',
       border: 'transparent'
     },
     outline: {
       bg: 'transparent',
-      color: 'var(--olenna-color-text-secondary)',
-      border: '1px solid var(--olenna-color-border-default)'
+      color: 'var(--olenna-color-text-primary)',
+      border: '1px solid var(--olenna-color-border-strong)'
     },
     success: {
       bg: 'var(--olenna-color-status-success-surface)',

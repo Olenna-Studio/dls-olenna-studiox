@@ -2,9 +2,13 @@
 
 Tokens defining layout spacing, component geometry, shadows, elevation, and motion.
 
+---
+
 ## Spacing Scale
 
 Components must not use arbitrary pixel values. All margins, paddings, and flex/grid gaps must reference the documented spacing scale:
+
+<TokenScalePreview type="spacing" />
 
 | Token | CSS Variable | Rem / Px Value |
 | :--- | :--- | :--- |
@@ -22,6 +26,10 @@ Components must not use arbitrary pixel values. All margins, paddings, and flex/
 ---
 
 ## Border Radii
+
+Standardized rounded corners for maintaining consistent geometry from small checkboxes to modal overlays:
+
+<TokenScalePreview type="radius" />
 
 | Token | CSS Variable | Value | Use Case |
 | :--- | :--- | :--- | :--- |

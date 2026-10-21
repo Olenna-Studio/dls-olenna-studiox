@@ -55,6 +55,7 @@ export const Popover: React.FC<PopoverProps> = ({
             left: align === 'left' ? 0 : 'auto',
             right: align === 'right' ? 0 : 'auto',
             backgroundColor: 'var(--olenna-color-surface-elevated)',
+            color: 'var(--olenna-color-text-primary)',
             border: '1px solid var(--olenna-color-border-default)',
             borderRadius: 'var(--olenna-border-radius-md)',
             boxShadow: 'var(--olenna-shadow-lg)',

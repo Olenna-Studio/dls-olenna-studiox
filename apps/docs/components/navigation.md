@@ -2,6 +2,28 @@
 
 Accessible navigation components providing keyboard interaction (Arrow keys, Home, End, Escape).
 
+## Interactive Previews
+
+<ComponentPreview title="Segmented Control" description="Interactive toggle pill for view modes, filtering, or tab switching">
+  <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+    <div class="preview-segmented">
+      <button class="preview-segmented-btn preview-segmented-btn--active">Grid View</button>
+      <button class="preview-segmented-btn">Editorial List</button>
+      <button class="preview-segmented-btn">Lookbook</button>
+    </div>
+    
+    <nav class="preview-breadcrumbs" aria-label="Breadcrumb">
+      <a href="#">Home</a>
+      <span>/</span>
+      <a href="#">Atelier Collections</a>
+      <span>/</span>
+      <span class="current">Autumn / Winter Silk Monogram</span>
+    </nav>
+  </div>
+</ComponentPreview>
+
+---
+
 ## Import
 
 ```tsx

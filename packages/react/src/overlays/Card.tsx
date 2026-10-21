@@ -56,6 +56,7 @@ export const Card = React.forwardRef<HTMLDivElement, CardProps>(({
       style={{
         borderRadius: 'var(--olenna-border-radius-md)',
         padding: paddings[padding],
+        color: 'var(--olenna-color-text-primary)',
         boxSizing: 'border-box',
         transition: 'transform var(--olenna-motion-duration-fast), box-shadow var(--olenna-motion-duration-fast)',
         ...getVariantStyles(),

@@ -18,6 +18,7 @@ export const Panel = React.forwardRef<HTMLDivElement, PanelProps>(({
       style={{
         padding: '1.25rem',
         backgroundColor: 'var(--olenna-color-surface-subtle)',
+        color: 'var(--olenna-color-text-primary)',
         border: '1px solid var(--olenna-color-border-default)',
         borderRadius: 'var(--olenna-border-radius-md)',
         ...style
