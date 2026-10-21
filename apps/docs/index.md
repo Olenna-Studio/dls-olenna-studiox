@@ -6,8 +6,8 @@ hero:
   text: "Design Language System"
   tagline: "Everyday elegance, thoughtfully curated. The unified source of truth for Olenna's web, PWA, and boutique platforms."
   image:
-    src: /images/logo/olenna-emblem.webp
-    alt: Olenna Botanical Emblem
+    src: /images/logo/olenna-logo-full.webp
+    alt: Olenna StudioX Full Logo
   actions:
     - theme: brand
       text: Get Started →
