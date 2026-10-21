@@ -1,0 +1,39 @@
+/**
+ * Olenna StudioX Base Styles
+ * Lightweight, non-destructive defaults preserving consumer resets.
+ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--olenna-typography-fontFamily-sans);
+  color: var(--olenna-color-text-primary);
+  background-color: var(--olenna-color-surface-page);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  line-height: var(--olenna-typography-lineHeight-normal);
+  font-size: var(--olenna-typography-fontSize-base);
+}
+
+/* Accessible focus visible treatment */
+:focus-visible {
+  outline: 2px solid var(--olenna-color-focus-ring);
+  outline-offset: 2px;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

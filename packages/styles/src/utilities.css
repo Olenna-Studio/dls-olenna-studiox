@@ -1,0 +1,44 @@
+/**
+ * Olenna StudioX Utility Classes
+ */
+
+/* Screen reader only utility (WCAG compliant) */
+.olenna-sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border-width: 0 !important;
+}
+
+/* Luxury Editorial Heading */
+.olenna-editorial-heading {
+  font-family: var(--olenna-typography-fontFamily-serif);
+  letter-spacing: var(--olenna-typography-letterSpacing-tight);
+  font-weight: var(--olenna-typography-fontWeight-medium);
+}
+
+/* Surface helpers */
+.olenna-surface-card {
+  background-color: var(--olenna-color-surface-card);
+  border: 1px solid var(--olenna-color-border-default);
+  border-radius: var(--olenna-border-radius-md);
+  box-shadow: var(--olenna-shadow-sm);
+}
+
+.olenna-surface-elevated {
+  background-color: var(--olenna-color-surface-elevated);
+  border: 1px solid var(--olenna-color-border-subtle);
+  border-radius: var(--olenna-border-radius-lg);
+  box-shadow: var(--olenna-shadow-lg);
+}
+
+/* Focus ring utility */
+.olenna-focus-ring:focus-visible {
+  outline: 2px solid var(--olenna-color-focus-ring);
+  outline-offset: 2px;
+}

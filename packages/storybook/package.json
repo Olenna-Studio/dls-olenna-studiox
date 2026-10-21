@@ -1,0 +1,32 @@
+{
+  "name": "@olenna/storybook",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Interactive component playground and catalog for Olenna StudioX DLS",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build": "storybook build"
+  },
+  "dependencies": {
+    "@olenna/patterns": "workspace:*",
+    "@olenna/react": "workspace:*",
+    "@olenna/styles": "workspace:*",
+    "@olenna/tokens": "workspace:*",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^8.4.7",
+    "@storybook/addon-essentials": "^8.4.7",
+    "@storybook/addon-interactions": "^8.4.7",
+    "@storybook/addon-links": "^8.4.7",
+    "@storybook/react": "^8.4.7",
+    "@storybook/react-vite": "^8.4.7",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "storybook": "^8.4.7",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3"
+  }
+}

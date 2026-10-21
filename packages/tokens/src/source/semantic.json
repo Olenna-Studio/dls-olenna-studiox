@@ -1,0 +1,159 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "light": {
+    "color": {
+      "text": {
+        "primary": { "value": "{color.brand.plum.900}", "type": "color", "description": "Primary editorial text" },
+        "secondary": { "value": "#5C4C56", "type": "color", "description": "Secondary copy and labels" },
+        "muted": { "value": "#8E7A87", "type": "color", "description": "Subtle timestamps and auxiliary details" },
+        "inverse": { "value": "{color.brand.ivory.50}", "type": "color", "description": "Text on dark or plum backgrounds" }
+      },
+      "surface": {
+        "page": { "value": "{color.brand.ivory.50}", "type": "color", "description": "Global page canvas" },
+        "card": { "value": "#FFFFFF", "type": "color", "description": "Default card and container background" },
+        "elevated": { "value": "#FFFFFF", "type": "color", "description": "Floating dialog and dropdown surface" },
+        "subtle": { "value": "{color.brand.ivory.100}", "type": "color", "description": "Subtle background wash" },
+        "accent": { "value": "{color.brand.blush.100}", "type": "color", "description": "Blush highlight surface" }
+      },
+      "border": {
+        "default": { "value": "{color.neutral.200}", "type": "color", "description": "Standard border for cards and inputs" },
+        "strong": { "value": "{color.neutral.400}", "type": "color", "description": "High contrast border" },
+        "subtle": { "value": "{color.neutral.100}", "type": "color", "description": "Subtle table row and list divider" },
+        "accent": { "value": "{color.brand.champagne.200}", "type": "color", "description": "Champagne metallic framing border" }
+      },
+      "action": {
+        "primary": {
+          "default": { "value": "{color.brand.plum.900}", "type": "color", "description": "Primary action button fill" },
+          "hover": { "value": "{color.brand.plum.800}", "type": "color", "description": "Primary action button hover" },
+          "active": { "value": "{color.brand.plum.950}", "type": "color", "description": "Primary action button pressed" },
+          "text": { "value": "{color.brand.ivory.50}", "type": "color", "description": "Primary action button text" }
+        },
+        "secondary": {
+          "default": { "value": "{color.brand.champagne.400}", "type": "color", "description": "Secondary button fill or border" },
+          "hover": { "value": "{color.brand.champagne.600}", "type": "color", "description": "Secondary button hover" },
+          "text": { "value": "{color.brand.plum.900}", "type": "color", "description": "Secondary button text" }
+        },
+        "tertiary": {
+          "hover": { "value": "{color.brand.blush.100}", "type": "color", "description": "Ghost button hover background" }
+        },
+        "destructive": {
+          "default": { "value": "{color.feedback.danger.600}", "type": "color", "description": "Destructive action fill" },
+          "hover": { "value": "{color.feedback.danger.700}", "type": "color", "description": "Destructive action hover" },
+          "text": { "value": "#FFFFFF", "type": "color", "description": "Destructive action text" }
+        }
+      },
+      "focus": {
+        "ring": { "value": "{color.brand.plum.900}", "type": "color", "description": "Visible keyboard focus ring" }
+      },
+      "link": {
+        "default": { "value": "{color.brand.roseMauve.500}", "type": "color", "description": "Standard inline anchor link" },
+        "hover": { "value": "{color.brand.roseMauve.600}", "type": "color", "description": "Anchor link hover state" }
+      },
+      "status": {
+        "success": {
+          "surface": { "value": "{color.feedback.success.50}", "type": "color" },
+          "border": { "value": "{color.feedback.success.500}", "type": "color" },
+          "text": { "value": "{color.feedback.success.700}", "type": "color" }
+        },
+        "warning": {
+          "surface": { "value": "{color.feedback.warning.50}", "type": "color" },
+          "border": { "value": "{color.feedback.warning.500}", "type": "color" },
+          "text": { "value": "{color.feedback.warning.700}", "type": "color" }
+        },
+        "danger": {
+          "surface": { "value": "{color.feedback.danger.50}", "type": "color" },
+          "border": { "value": "{color.feedback.danger.500}", "type": "color" },
+          "text": { "value": "{color.feedback.danger.700}", "type": "color" }
+        },
+        "info": {
+          "surface": { "value": "{color.feedback.info.50}", "type": "color" },
+          "border": { "value": "{color.feedback.info.500}", "type": "color" },
+          "text": { "value": "{color.feedback.info.700}", "type": "color" }
+        }
+      },
+      "disabled": {
+        "surface": { "value": "{color.neutral.100}", "type": "color", "description": "Disabled button and control background" },
+        "text": { "value": "{color.neutral.400}", "type": "color", "description": "Disabled text color" },
+        "border": { "value": "{color.neutral.200}", "type": "color", "description": "Disabled control border" }
+      }
+    }
+  },
+  "dark": {
+    "color": {
+      "text": {
+        "primary": { "value": "#FFFAF7", "type": "color", "description": "Primary dark mode text" },
+        "secondary": { "value": "#DFC7B0", "type": "color", "description": "Secondary dark mode text" },
+        "muted": { "value": "#A893A1", "type": "color", "description": "Muted dark mode text" },
+        "inverse": { "value": "#211B17", "type": "color", "description": "Dark mode inverse text" }
+      },
+      "surface": {
+        "page": { "value": "#1C1419", "type": "color", "description": "Dark page canvas" },
+        "card": { "value": "#271C23", "type": "color", "description": "Dark mode card surface" },
+        "elevated": { "value": "#34262F", "type": "color", "description": "Dark mode elevated modal surface" },
+        "subtle": { "value": "#21171E", "type": "color", "description": "Dark mode subtle background" },
+        "accent": { "value": "#3E2B38", "type": "color", "description": "Dark mode accent surface" }
+      },
+      "border": {
+        "default": { "value": "#493541", "type": "color", "description": "Dark mode standard border" },
+        "strong": { "value": "#6D4C5E", "type": "color", "description": "Dark mode strong border" },
+        "subtle": { "value": "#382932", "type": "color", "description": "Dark mode subtle divider" },
+        "accent": { "value": "#9E7958", "type": "color", "description": "Dark mode champagne border" }
+      },
+      "action": {
+        "primary": {
+          "default": { "value": "{color.brand.champagne.400}", "type": "color" },
+          "hover": { "value": "{color.brand.champagne.200}", "type": "color" },
+          "active": { "value": "#FFFAF7", "type": "color" },
+          "text": { "value": "#211B17", "type": "color" }
+        },
+        "secondary": {
+          "default": { "value": "{color.brand.mauve.300}", "type": "color" },
+          "hover": { "value": "{color.brand.mauve.200}", "type": "color" },
+          "text": { "value": "#FFFAF7", "type": "color" }
+        },
+        "tertiary": {
+          "hover": { "value": "#34262F", "type": "color" }
+        },
+        "destructive": {
+          "default": { "value": "{color.feedback.danger.500}", "type": "color" },
+          "hover": { "value": "{color.feedback.danger.600}", "type": "color" },
+          "text": { "value": "#FFFFFF", "type": "color" }
+        }
+      },
+      "focus": {
+        "ring": { "value": "{color.brand.champagne.400}", "type": "color" }
+      },
+      "link": {
+        "default": { "value": "{color.brand.champagne.200}", "type": "color" },
+        "hover": { "value": "#FFFAF7", "type": "color" }
+      },
+      "status": {
+        "success": {
+          "surface": { "value": "#052E16", "type": "color" },
+          "border": { "value": "{color.feedback.success.600}", "type": "color" },
+          "text": { "value": "{color.feedback.success.100}", "type": "color" }
+        },
+        "warning": {
+          "surface": { "value": "#3B1B04", "type": "color" },
+          "border": { "value": "{color.feedback.warning.600}", "type": "color" },
+          "text": { "value": "{color.feedback.warning.100}", "type": "color" }
+        },
+        "danger": {
+          "surface": { "value": "#3C0B0B", "type": "color" },
+          "border": { "value": "{color.feedback.danger.600}", "type": "color" },
+          "text": { "value": "{color.feedback.danger.100}", "type": "color" }
+        },
+        "info": {
+          "surface": { "value": "#082F49", "type": "color" },
+          "border": { "value": "{color.feedback.info.600}", "type": "color" },
+          "text": { "value": "{color.feedback.info.100}", "type": "color" }
+        }
+      },
+      "disabled": {
+        "surface": { "value": "#2A1E26", "type": "color" },
+        "text": { "value": "#6D4C5E", "type": "color" },
+        "border": { "value": "#382932", "type": "color" }
+      }
+    }
+  }
+}

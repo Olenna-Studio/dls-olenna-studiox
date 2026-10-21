@@ -1,0 +1,14 @@
+{
+  "name": "@olenna/eslint-config",
+  "version": "1.0.0",
+  "description": "Shared ESLint configuration for Olenna StudioX repositories",
+  "keywords": ["olenna", "eslint", "linting", "design-system"],
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "peerDependencies": {
+    "eslint": ">=8.0.0"
+  }
+}

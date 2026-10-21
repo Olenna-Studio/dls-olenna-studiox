@@ -1,0 +1,37 @@
+{
+  "name": "@olenna/tokens",
+  "version": "1.0.0",
+  "description": "Design tokens, CSS variables, and platform-neutral token sources for Olenna StudioX",
+  "keywords": ["olenna", "design-tokens", "css-variables", "design-system"],
+  "license": "MIT",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "style": "./dist/index.css",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./css": "./dist/index.css",
+    "./tokens.json": "./dist/tokens.json",
+    "./token-reference.md": "./dist/token-reference.md",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "src/source"
+  ],
+  "scripts": {
+    "build": "tsx src/build.ts",
+    "validate": "tsx src/validate.ts",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

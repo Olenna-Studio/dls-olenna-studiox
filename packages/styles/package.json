@@ -1,0 +1,44 @@
+{
+  "name": "@olenna/styles",
+  "version": "1.0.0",
+  "description": "CSS stylesheet, resets, utilities, theme classes, and Tailwind preset for Olenna StudioX",
+  "keywords": ["olenna", "styles", "css", "tailwind-preset", "design-system"],
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "style": "./src/index.css",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./css": "./src/index.css",
+    "./base.css": "./src/base.css",
+    "./utilities.css": "./src/utilities.css",
+    "./tailwind": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@olenna/tokens": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  }
+}
