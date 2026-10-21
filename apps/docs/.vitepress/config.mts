@@ -117,9 +117,6 @@ export default defineConfig({
     search: {
       provider: 'local'
     },
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/Olenna-Studio/dls-olenna-studiox' }
-    ],
     footer: {
       message: 'Olenna StudioX Design Language System. Everyday elegance, thoughtfully curated.',
       copyright: 'Copyright © 2026 Olenna Luxury Brands. All rights reserved.'
