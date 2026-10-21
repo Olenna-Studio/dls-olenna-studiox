@@ -10,7 +10,7 @@ export default defineConfig({
     ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300..700&display=swap' }]
   ],
   themeConfig: {
-    logo: '/svg/olenna-emblem-light.svg',
+    logo: '/images/logo/olenna-emblem.webp',
     siteTitle: 'Olenna StudioX DLS',
     nav: [
       { text: 'Guide', link: '/guide/getting-started' },
@@ -71,6 +71,7 @@ export default defineConfig({
           text: 'Components Catalogue',
           items: [
             { text: 'Overview', link: '/components/overview' },
+            { text: 'Brand Logo', link: '/components/logo' },
             { text: 'Button & Actions', link: '/components/buttons' },
             { text: 'Form Controls', link: '/components/forms' },
             { text: 'Navigation & Tabs', link: '/components/navigation' },

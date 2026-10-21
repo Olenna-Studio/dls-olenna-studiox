@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '../utils/cn';
 
-export type ButtonVariant = 'primary' | 'secondary' | 'tertiary' | 'destructive' | 'link';
-export type ButtonSize = 'sm' | 'md' | 'lg';
+export type ButtonVariant = 'primary' | 'secondary' | 'outline' | 'ghost' | 'tertiary' | 'destructive' | 'link' | 'circle';
+export type ButtonSize = 'sm' | 'md' | 'lg' | 'icon';
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
@@ -31,9 +31,10 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({
   const isDisabled = disabled || isLoading;
 
   const sizeMetrics: Record<ButtonSize, { height: string; padding: string; fontSize: string }> = {
-    sm: { height: 'var(--olenna-component-button-height-sm, 2rem)', padding: '0 0.75rem', fontSize: '0.8125rem' },
+    sm: { height: 'var(--olenna-component-button-height-sm, 2rem)', padding: '0 0.875rem', fontSize: '0.8125rem' },
     md: { height: 'var(--olenna-component-button-height-md, 2.5rem)', padding: '0 1.25rem', fontSize: '0.875rem' },
-    lg: { height: 'var(--olenna-component-button-height-lg, 3rem)', padding: '0 1.75rem', fontSize: '1rem' }
+    lg: { height: 'var(--olenna-component-button-height-lg, 3rem)', padding: '0 1.75rem', fontSize: '1rem' },
+    icon: { height: 'var(--olenna-component-button-height-md, 2.5rem)', padding: '0', fontSize: '1rem' }
   };
 
   const currentSize = sizeMetrics[size];
@@ -42,32 +43,47 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({
     switch (variant) {
       case 'primary':
         return {
-          backgroundColor: isDisabled ? 'var(--olenna-color-disabled-surface)' : 'var(--olenna-color-action-primary-default)',
-          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-action-primary-text)',
-          border: '1px solid transparent'
+          backgroundColor: isDisabled ? 'var(--olenna-color-disabled-surface)' : 'var(--olenna-color-action-primary-default, #493541)',
+          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-action-primary-text, #FFFFFF)',
+          border: '1px solid transparent',
+          boxShadow: 'var(--olenna-shadow-sm, 0 1px 2px 0 rgba(73, 53, 65, 0.05))'
         };
       case 'secondary':
         return {
-          backgroundColor: 'transparent',
-          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-action-secondary-text)',
-          border: `1px solid ${isDisabled ? 'var(--olenna-color-disabled-border)' : 'var(--olenna-color-brand-champagne-400)'}`
+          backgroundColor: isDisabled ? 'var(--olenna-color-disabled-surface)' : 'var(--olenna-color-action-secondary-default, #DCC5D8)',
+          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-action-secondary-text, #33232D)',
+          border: '1px solid transparent'
         };
+      case 'outline':
+        return {
+          backgroundColor: 'transparent',
+          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-brand-plum-900, #493541)',
+          border: '1px solid rgba(73, 53, 65, 0.3)'
+        };
+      case 'ghost':
       case 'tertiary':
         return {
           backgroundColor: 'transparent',
-          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-text-primary)',
+          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-brand-plum-900, #493541)',
           border: '1px solid transparent'
+        };
+      case 'circle':
+        return {
+          backgroundColor: '#FFFFFF',
+          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-brand-plum-900, #493541)',
+          border: '1px solid rgba(73, 53, 65, 0.15)',
+          boxShadow: '0 1px 2px 0 rgba(73, 53, 65, 0.05)'
         };
       case 'destructive':
         return {
-          backgroundColor: isDisabled ? 'var(--olenna-color-disabled-surface)' : 'var(--olenna-color-action-destructive-default)',
-          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-action-destructive-text)',
+          backgroundColor: isDisabled ? 'var(--olenna-color-disabled-surface)' : 'var(--olenna-color-action-destructive-default, #DC2626)',
+          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-action-destructive-text, #FFFFFF)',
           border: '1px solid transparent'
         };
       case 'link':
         return {
           backgroundColor: 'transparent',
-          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-link-default)',
+          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-link-default, #A66B83)',
           border: 'none',
           padding: 0,
           height: 'auto',
@@ -76,19 +92,21 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({
     }
   };
 
+  const isSquareOrCircle = variant === 'circle' || size === 'icon';
+
   const buttonStyle: React.CSSProperties = {
     display: 'inline-flex',
     alignItems: 'center',
     justifyContent: 'center',
     gap: '0.5rem',
-    width: fullWidth ? '100%' : 'auto',
+    width: fullWidth ? '100%' : isSquareOrCircle ? currentSize.height : 'auto',
     height: variant === 'link' ? 'auto' : currentSize.height,
-    padding: variant === 'link' ? 0 : currentSize.padding,
+    padding: variant === 'link' || isSquareOrCircle ? 0 : currentSize.padding,
     fontSize: currentSize.fontSize,
     fontFamily: 'var(--olenna-typography-fontFamily-sans)',
     fontWeight: 'var(--olenna-typography-fontWeight-medium)',
     letterSpacing: '0.02em',
-    borderRadius: variant === 'link' ? 0 : 'var(--olenna-border-radius-sm)',
+    borderRadius: variant === 'link' ? 0 : 'var(--olenna-component-button-radius, var(--olenna-border-radius-full, 9999px))',
     cursor: isDisabled ? 'not-allowed' : 'pointer',
     transition: 'all var(--olenna-motion-duration-fast) var(--olenna-motion-easing-standard)',
     userSelect: 'none',

@@ -36,6 +36,11 @@
         "400": { "value": "#BD849C", "type": "color", "description": "Bright rose mauve" },
         "500": { "value": "#A66B83", "type": "color", "description": "Signature rose mauve interactive" },
         "600": { "value": "#8F546E", "type": "color", "description": "Deep rose mauve active state" }
+      },
+      "text": {
+        "primary": { "value": "#261C22", "type": "color", "description": "Master Olenna brand text primary (#261C22) from Olenna Web" },
+        "secondary": { "value": "#5C4C56", "type": "color", "description": "Secondary brand text (#5C4C56)" },
+        "muted": { "value": "#8E7A87", "type": "color", "description": "Muted brand text (#8E7A87)" }
       }
     },
     "neutral": {

@@ -9,6 +9,7 @@ import {
   CardTitle,
   CardContent,
   CardFooter,
+  Logo,
   useTheme
 } from '@olenna/react';
 import { ProductCard, CollectionGrid } from '@olenna/patterns';
@@ -19,12 +20,12 @@ export function App() {
 
   return (
     <Container size="xl" style={{ paddingTop: '2.5rem', paddingBottom: '3rem' }}>
-      <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
-        <div>
-          <Heading level={1} headingStyle="editorial">
-            Olenna StudioX Storefront
-          </Heading>
-          <Text variant="caption">Everyday elegance, thoughtfully curated.</Text>
+      <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2.5rem', flexWrap: 'wrap', gap: '1rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
+          <Logo variant="horizontal" size="md" href="/" />
+          <div style={{ borderLeft: '1px solid var(--olenna-color-border-default)', paddingLeft: '1.5rem' }}>
+            <Text variant="caption">Everyday elegance, thoughtfully curated.</Text>
+          </div>
         </div>
         <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
           <Button variant="secondary" size="sm" onClick={toggleTheme}>

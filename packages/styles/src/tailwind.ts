@@ -68,6 +68,49 @@ export const olennaTailwindPreset = {
             secondary: 'var(--olenna-color-action-secondary-default)',
             'secondary-hover': 'var(--olenna-color-action-secondary-hover)',
           }
+        },
+        // Olenna Web direct compatibility namespace
+        brand: {
+          blush: {
+            50: 'var(--olenna-color-brand-blush-50, #FAF1F4)',
+            100: 'var(--olenna-color-brand-blush-100, #F5E3EA)',
+            200: 'var(--olenna-color-brand-blush-200, #EED5E0)',
+            300: 'var(--olenna-color-brand-blush-300, #E0B7CA)',
+          },
+          mauve: {
+            100: 'var(--olenna-color-brand-mauve-100, #EFE4EC)',
+            200: 'var(--olenna-color-brand-mauve-200, #DCC5D8)',
+            300: 'var(--olenna-color-brand-mauve-300, #CFB0CA)',
+            400: 'var(--olenna-color-brand-mauve-400, #C5A5BF)',
+          },
+          ivory: {
+            50: 'var(--olenna-color-brand-ivory-50, #FFFAF7)',
+            100: 'var(--olenna-color-brand-ivory-100, #FAF5F2)',
+            200: 'var(--olenna-color-brand-ivory-200, #F5EFEA)',
+          },
+          champagne: {
+            100: 'var(--olenna-color-brand-champagne-100, #F2E8DE)',
+            200: 'var(--olenna-color-brand-champagne-200, #DFC7B0)',
+            400: 'var(--olenna-color-brand-champagne-400, #C4A181)',
+            600: 'var(--olenna-color-brand-champagne-600, #9E7958)',
+          },
+          plum: {
+            600: 'var(--olenna-color-brand-plum-600, #845B73)',
+            700: 'var(--olenna-color-brand-plum-700, #6D4C5E)',
+            800: 'var(--olenna-color-brand-plum-800, #593D4E)',
+            900: 'var(--olenna-color-brand-plum-900, #493541)',
+            950: 'var(--olenna-color-brand-plum-950, #33232D)',
+          },
+          roseMauve: {
+            400: 'var(--olenna-color-brand-roseMauve-400, #BD849C)',
+            500: 'var(--olenna-color-brand-roseMauve-500, #A66B83)',
+            600: 'var(--olenna-color-brand-roseMauve-600, #8F546E)',
+          },
+          text: {
+            primary: 'var(--olenna-color-brand-text-primary, #261C22)',
+            secondary: 'var(--olenna-color-brand-text-secondary, #5C4C56)',
+            muted: 'var(--olenna-color-brand-text-muted, #8E7A87)',
+          }
         }
       },
       fontFamily: {

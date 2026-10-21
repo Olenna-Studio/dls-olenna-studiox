@@ -7,7 +7,8 @@ import {
   Card,
   CardHeader,
   CardTitle,
-  CardContent
+  CardContent,
+  Logo
 } from '@olenna/react';
 import { CustomerPwaBanner } from '@olenna/patterns';
 
@@ -15,6 +16,11 @@ export default function HomePage() {
   return (
     <main>
       <Container size="xl" style={{ paddingTop: '3rem', paddingBottom: '4rem' }}>
+        <div style={{ marginBottom: '2.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <Logo variant="horizontal" size="md" href="/" />
+          <Button variant="outline" size="sm">Client Portal</Button>
+        </div>
+
         <CustomerPwaBanner style={{ marginBottom: '2.5rem' }} />
 
         <Heading level={1} headingStyle="editorial">

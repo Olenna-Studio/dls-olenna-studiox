@@ -1,6 +1,24 @@
 import { BrandAssetMetadata, BrandClearanceGuidelines, BrandColorDefinition } from './types';
 
 export const OLENNA_BRAND_PALETTE: Record<string, BrandColorDefinition> = {
+  charcoalPrimary: {
+    name: 'Brand Charcoal Primary',
+    hex: '#261C22',
+    role: 'Master Primary Typography & Highest Contrast Text',
+    usageNotes: 'Master brand text color across Olenna Web storefront, PWA, and boutique portals (#261C22).'
+  },
+  plumSecondary: {
+    name: 'Plum Secondary Text',
+    hex: '#5C4C56',
+    role: 'Secondary Copy & Subtitles',
+    usageNotes: 'Subtle plum for descriptions, auxiliary product details, and subtitles (#5C4C56).'
+  },
+  mutedPlum: {
+    name: 'Muted Plum Text',
+    hex: '#8E7A87',
+    role: 'Muted Brand Text & Captions',
+    usageNotes: 'Timestamps, disclaimers, and subtle auxiliary details (#8E7A87).'
+  },
   warmIvory: {
     name: 'Warm Ivory',
     hex: '#FFFAF7',
@@ -16,8 +34,8 @@ export const OLENNA_BRAND_PALETTE: Record<string, BrandColorDefinition> = {
   softMauve: {
     name: 'Soft Mauve',
     hex: '#DCC5D8',
-    role: 'Subtle Accent & Border Wash',
-    usageNotes: 'Framing dividers, decorative badges, and active state indicators.'
+    role: 'Subtle Accent & Secondary Action Fill',
+    usageNotes: 'Secondary button fill, framing dividers, decorative badges, and active state indicators.'
   },
   champagne: {
     name: 'Champagne',
@@ -28,8 +46,14 @@ export const OLENNA_BRAND_PALETTE: Record<string, BrandColorDefinition> = {
   deepPlum: {
     name: 'Deep Plum',
     hex: '#493541',
-    role: 'Primary Editorial Typography & Dominant Brand Text',
-    usageNotes: 'Primary text, high-contrast buttons, and principal logo mark color.'
+    role: 'Primary Action Fill & Dominant Plum Mark',
+    usageNotes: 'Primary action buttons, high-contrast badges, and principal plum brand mark.'
+  },
+  midnightPlum: {
+    name: 'Midnight Plum',
+    hex: '#33232D',
+    role: 'Action Hover State & Deep Accent',
+    usageNotes: 'Primary button hover state and deep contrast borders.'
   },
   roseMauve: {
     name: 'Rose Mauve',
@@ -137,6 +161,55 @@ export const BRAND_ASSETS_MANIFEST: BrandAssetMetadata[] = [
     recommendedClearanceMultiplier: 0.5,
     description: 'Dark-background botanical monogram.'
   },
+  // Authentic WebP Masters from Olenna Web
+  {
+    id: 'olenna-logo-full-webp',
+    name: 'Olenna Full Logo (Authentic WebP)',
+    variant: 'full',
+    theme: 'light',
+    format: 'webp',
+    filePath: 'olenna-logo-full.webp',
+    dimensions: { width: 1024, height: 825 },
+    recommendedMinSizePx: { width: 110, height: 89 },
+    recommendedClearanceMultiplier: 0.5,
+    description: 'High-performance WebP raster master of the full stacked logo.'
+  },
+  {
+    id: 'olenna-horizontal-webp',
+    name: 'Olenna Horizontal (Authentic WebP)',
+    variant: 'horizontal',
+    theme: 'light',
+    format: 'webp',
+    filePath: 'olenna-horizontal.webp',
+    dimensions: { width: 1200, height: 266 },
+    recommendedMinSizePx: { width: 140, height: 31 },
+    recommendedClearanceMultiplier: 0.5,
+    description: 'High-performance WebP raster master of the horizontal header lockup.'
+  },
+  {
+    id: 'olenna-emblem-webp',
+    name: 'Olenna Emblem (Authentic WebP)',
+    variant: 'emblem',
+    theme: 'light',
+    format: 'webp',
+    filePath: 'olenna-emblem.webp',
+    dimensions: { width: 512, height: 465 },
+    recommendedMinSizePx: { width: 32, height: 29 },
+    recommendedClearanceMultiplier: 0.5,
+    description: 'High-performance WebP raster master of the botanical emblem.'
+  },
+  {
+    id: 'olenna-wordmark-webp',
+    name: 'Olenna Wordmark (Authentic WebP)',
+    variant: 'wordmark',
+    theme: 'light',
+    format: 'webp',
+    filePath: 'olenna-wordmark.webp',
+    dimensions: { width: 800, height: 242 },
+    recommendedMinSizePx: { width: 120, height: 36 },
+    recommendedClearanceMultiplier: 0.5,
+    description: 'High-performance WebP raster master of the standalone wordmark.'
+  },
   // Authentic Raster Sources from Creative Direction
   {
     id: 'olenna-logo-full-png',
@@ -185,6 +258,18 @@ export const BRAND_ASSETS_MANIFEST: BrandAssetMetadata[] = [
     recommendedMinSizePx: { width: 155, height: 47 },
     recommendedClearanceMultiplier: 0.5,
     description: 'Authentic high-resolution raster master of the standalone wordmark.'
+  },
+  {
+    id: 'olenna-logo-raw-png',
+    name: 'Olenna Logo Raw Master',
+    variant: 'full',
+    theme: 'raw',
+    format: 'png',
+    filePath: 'logo-raw.png',
+    dimensions: { width: 1024, height: 1024 },
+    recommendedMinSizePx: { width: 150, height: 150 },
+    recommendedClearanceMultiplier: 0.5,
+    description: 'Original raw artwork asset from creative direction.'
   }
 ];
 

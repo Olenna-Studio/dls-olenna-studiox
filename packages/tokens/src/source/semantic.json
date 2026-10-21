@@ -3,9 +3,9 @@
   "light": {
     "color": {
       "text": {
-        "primary": { "value": "{color.brand.plum.900}", "type": "color", "description": "Primary editorial text" },
-        "secondary": { "value": "#5C4C56", "type": "color", "description": "Secondary copy and labels" },
-        "muted": { "value": "#8E7A87", "type": "color", "description": "Subtle timestamps and auxiliary details" },
+        "primary": { "value": "{color.brand.text.primary}", "type": "color", "description": "Primary editorial brand text (#261C22) from Olenna Web" },
+        "secondary": { "value": "{color.brand.text.secondary}", "type": "color", "description": "Secondary copy and labels (#5C4C56)" },
+        "muted": { "value": "{color.brand.text.muted}", "type": "color", "description": "Subtle timestamps and auxiliary details (#8E7A87)" },
         "inverse": { "value": "{color.brand.ivory.50}", "type": "color", "description": "Text on dark or plum backgrounds" }
       },
       "surface": {
@@ -16,25 +16,25 @@
         "accent": { "value": "{color.brand.blush.100}", "type": "color", "description": "Blush highlight surface" }
       },
       "border": {
-        "default": { "value": "{color.neutral.200}", "type": "color", "description": "Standard border for cards and inputs" },
-        "strong": { "value": "{color.neutral.400}", "type": "color", "description": "High contrast border" },
-        "subtle": { "value": "{color.neutral.100}", "type": "color", "description": "Subtle table row and list divider" },
+        "default": { "value": "rgba(73, 53, 65, 0.12)", "type": "color", "description": "Standard border with subtle plum tint matching Olenna Web" },
+        "strong": { "value": "rgba(73, 53, 65, 0.25)", "type": "color", "description": "High contrast plum border" },
+        "subtle": { "value": "rgba(73, 53, 65, 0.06)", "type": "color", "description": "Subtle table row and list divider" },
         "accent": { "value": "{color.brand.champagne.200}", "type": "color", "description": "Champagne metallic framing border" }
       },
       "action": {
         "primary": {
-          "default": { "value": "{color.brand.plum.900}", "type": "color", "description": "Primary action button fill" },
-          "hover": { "value": "{color.brand.plum.800}", "type": "color", "description": "Primary action button hover" },
-          "active": { "value": "{color.brand.plum.950}", "type": "color", "description": "Primary action button pressed" },
-          "text": { "value": "{color.brand.ivory.50}", "type": "color", "description": "Primary action button text" }
+          "default": { "value": "{color.brand.plum.900}", "type": "color", "description": "Primary action button fill (#493541)" },
+          "hover": { "value": "{color.brand.plum.950}", "type": "color", "description": "Primary action button hover (#33232D)" },
+          "active": { "value": "{color.brand.plum.950}", "type": "color", "description": "Primary action button pressed (#33232D)" },
+          "text": { "value": "#FFFFFF", "type": "color", "description": "Primary action button text" }
         },
         "secondary": {
-          "default": { "value": "{color.brand.champagne.400}", "type": "color", "description": "Secondary button fill or border" },
-          "hover": { "value": "{color.brand.champagne.600}", "type": "color", "description": "Secondary button hover" },
-          "text": { "value": "{color.brand.plum.900}", "type": "color", "description": "Secondary button text" }
+          "default": { "value": "{color.brand.mauve.200}", "type": "color", "description": "Secondary button fill (#DCC5D8) matching Olenna Web" },
+          "hover": { "value": "{color.brand.mauve.400}", "type": "color", "description": "Secondary button hover (#C5A5BF)" },
+          "text": { "value": "{color.brand.plum.950}", "type": "color", "description": "Secondary button text (#33232D)" }
         },
         "tertiary": {
-          "hover": { "value": "{color.brand.blush.100}", "type": "color", "description": "Ghost button hover background" }
+          "hover": { "value": "rgba(73, 53, 65, 0.05)", "type": "color", "description": "Ghost button hover background" }
         },
         "destructive": {
           "default": { "value": "{color.feedback.danger.600}", "type": "color", "description": "Destructive action fill" },

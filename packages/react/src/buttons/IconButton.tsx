@@ -28,7 +28,8 @@ export const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>((
   const sizePixels: Record<ButtonSize, string> = {
     sm: 'var(--olenna-component-button-height-sm, 2rem)',
     md: 'var(--olenna-component-button-height-md, 2.5rem)',
-    lg: 'var(--olenna-component-button-height-lg, 3rem)'
+    lg: 'var(--olenna-component-button-height-lg, 3rem)',
+    icon: 'var(--olenna-component-button-height-md, 2.5rem)'
   };
 
   const dim = sizePixels[size];
@@ -37,32 +38,47 @@ export const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>((
     switch (variant) {
       case 'primary':
         return {
-          backgroundColor: isDisabled ? 'var(--olenna-color-disabled-surface)' : 'var(--olenna-color-action-primary-default)',
-          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-action-primary-text)',
+          backgroundColor: isDisabled ? 'var(--olenna-color-disabled-surface)' : 'var(--olenna-color-action-primary-default, #493541)',
+          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-action-primary-text, #FFFFFF)',
           border: '1px solid transparent'
         };
       case 'secondary':
         return {
-          backgroundColor: 'transparent',
-          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-action-secondary-text)',
-          border: `1px solid ${isDisabled ? 'var(--olenna-color-disabled-border)' : 'var(--olenna-color-brand-champagne-400)'}`
+          backgroundColor: isDisabled ? 'var(--olenna-color-disabled-surface)' : 'var(--olenna-color-action-secondary-default, #DCC5D8)',
+          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-action-secondary-text, #33232D)',
+          border: '1px solid transparent'
         };
+      case 'outline':
+        return {
+          backgroundColor: 'transparent',
+          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-brand-plum-900, #493541)',
+          border: '1px solid rgba(73, 53, 65, 0.3)'
+        };
+      case 'ghost':
       case 'tertiary':
         return {
           backgroundColor: 'transparent',
-          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-text-primary)',
+          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-brand-plum-900, #493541)',
           border: '1px solid transparent'
+        };
+      case 'circle':
+        return {
+          backgroundColor: '#FFFFFF',
+          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-brand-plum-900, #493541)',
+          border: '1px solid rgba(73, 53, 65, 0.15)',
+          boxShadow: '0 1px 2px 0 rgba(73, 53, 65, 0.05)'
         };
       case 'destructive':
         return {
-          backgroundColor: isDisabled ? 'var(--olenna-color-disabled-surface)' : 'var(--olenna-color-action-destructive-default)',
-          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-action-destructive-text)',
+          backgroundColor: isDisabled ? 'var(--olenna-color-disabled-surface)' : 'var(--olenna-color-action-destructive-default, #DC2626)',
+          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-action-destructive-text, #FFFFFF)',
           border: '1px solid transparent'
         };
       case 'link':
+      default:
         return {
           backgroundColor: 'transparent',
-          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-link-default)',
+          color: isDisabled ? 'var(--olenna-color-disabled-text)' : 'var(--olenna-color-link-default, #A66B83)',
           border: 'none'
         };
     }

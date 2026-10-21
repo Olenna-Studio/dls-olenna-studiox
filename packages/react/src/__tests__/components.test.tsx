@@ -11,6 +11,7 @@ import {
   ValidationMessage,
   Alert,
   Badge,
+  Logo,
   Tabs,
   TabList,
   Tab,
@@ -198,6 +199,24 @@ describe('@olenna/react Components', () => {
       expect(screen.getByTestId('theme-val')).toHaveTextContent('light');
       fireEvent.click(screen.getByText(/toggle/i));
       expect(screen.getByTestId('theme-val')).toHaveTextContent('dark');
+    });
+  });
+
+  describe('Logo', () => {
+    it('renders authentic Olenna image variant', () => {
+      render(<Logo variant="horizontal" size="md" />);
+      const img = screen.getByRole('img', { name: /olenna/i });
+      expect(img).toBeInTheDocument();
+      expect(img).toHaveAttribute('src', '/images/logo/olenna-horizontal.webp');
+      expect(img).toHaveAttribute('width', '180');
+      expect(img).toHaveAttribute('height', '40');
+    });
+
+    it('renders accessible link when href is passed and displays tagline when requested', () => {
+      render(<Logo variant="stacked" size="sm" href="/" withTagline />);
+      const link = screen.getByRole('link', { name: /olenna/i });
+      expect(link).toHaveAttribute('href', '/');
+      expect(screen.getByText(/everyday elegance, thoughtfully curated/i)).toBeInTheDocument();
     });
   });
 });

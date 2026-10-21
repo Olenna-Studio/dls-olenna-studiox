@@ -9,7 +9,7 @@ const meta: Meta<typeof Button> = {
   argTypes: {
     variant: {
       control: 'select',
-      options: ['primary', 'secondary', 'tertiary', 'destructive', 'link']
+      options: ['primary', 'secondary', 'outline', 'ghost', 'tertiary', 'circle', 'destructive', 'link']
     },
     size: {
       control: 'select',
@@ -36,6 +36,22 @@ export const Secondary: Story = {
     variant: 'secondary',
     size: 'md',
     children: 'Boutique Consultation'
+  }
+};
+
+export const Outline: Story = {
+  args: {
+    variant: 'outline',
+    size: 'md',
+    children: 'Store Locator'
+  }
+};
+
+export const Circle: Story = {
+  args: {
+    variant: 'circle',
+    size: 'md',
+    children: '→'
   }
 };
 
