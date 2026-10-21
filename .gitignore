@@ -14,6 +14,7 @@ out
 storybook-static
 .vitepress/dist
 .vitepress/cache
+apps/docs/.vitepress/cache
 
 # Testing & Coverage
 coverage
