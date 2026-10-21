@@ -35,10 +35,12 @@ Before writing code, review our core principles:
    pnpm test
    ```
 
-5. **Start Documentation or Storybook**:
+5. **Start Development Targets**:
    ```bash
-   pnpm dev:docs    # VitePress at http://localhost:5173
-   pnpm storybook   # Storybook at http://localhost:6006
+   pnpm dev:docs           # VitePress docs at http://localhost:5173
+   pnpm storybook          # Storybook at http://localhost:6006
+   pnpm dev:example-vite   # Vite React consumer at http://localhost:5174
+   pnpm dev:example-next   # Next.js 15 consumer at http://localhost:3000
    ```
 
 ---

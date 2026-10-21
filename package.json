@@ -13,6 +13,8 @@
     "build:examples": "pnpm --filter \"example-*\" run build",
     "dev": "pnpm --filter @olenna/storybook run storybook",
     "dev:docs": "pnpm --filter docs run dev",
+    "dev:example-vite": "pnpm --filter example-vite-react run dev",
+    "dev:example-next": "pnpm --filter example-nextjs run dev",
     "storybook": "pnpm --filter @olenna/storybook run storybook",
     "test": "pnpm --filter \"@olenna/*\" run test",
     "test:coverage": "pnpm --filter \"@olenna/*\" run test:coverage",

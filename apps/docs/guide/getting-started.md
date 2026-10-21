@@ -118,3 +118,23 @@ Or switch declaratively in HTML:
   ...
 </html>
 ```
+
+---
+
+## 5. Running the Monorepo Locally
+
+If you are developing inside the `olenna-studiox` repository, launch any target directly:
+
+```bash
+# Documentation website (VitePress) -> http://localhost:5173
+pnpm dev:docs
+
+# Interactive component playground (Storybook) -> http://localhost:6006
+pnpm storybook
+
+# Live Vite + React consumer testbed -> http://localhost:5174
+pnpm dev:example-vite
+
+# Live Next.js 15 App Router consumer testbed -> http://localhost:3000
+pnpm dev:example-next
+```

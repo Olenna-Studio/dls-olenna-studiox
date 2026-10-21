@@ -72,25 +72,39 @@ export default function App() {
 
 ---
 
-## 🛠 Local Development Commands
+## 🛠 Developer Running Instructions
+
+The repository includes multiple development targets. Use the commands below from the root directory:
+
+| Target | Command | Local URL | Purpose |
+| :--- | :--- | :--- | :--- |
+| **Documentation Website** | `pnpm dev:docs` | [http://localhost:5173](http://localhost:5173) | VitePress docs, guidelines & token tables |
+| **Component Playground** | `pnpm storybook` | [http://localhost:6006](http://localhost:6006) | Storybook 8 interactive component catalog |
+| **Vite + React Consumer** | `pnpm dev:example-vite` | [http://localhost:5174](http://localhost:5174) | Live client-side consumer testbed |
+| **Next.js 15 Consumer** | `pnpm dev:example-next` | [http://localhost:3000](http://localhost:3000) | Live App Router & SSR consumer testbed |
+
+### Common Development Tasks
 
 ```bash
-# Install workspace dependencies
+# 1. Install workspace dependencies
 pnpm install
 
-# Build all packages (tokens, brand-assets, styles, react, patterns)
+# 2. Build all packages (@olenna/*)
 pnpm build
 
-# Run unit and accessibility tests
+# 3. Run unit and accessibility tests
 pnpm test
 
-# Run documentation website locally (VitePress)
-pnpm dev:docs
+# 4. Build documentation website for production
+pnpm build:docs
 
-# Launch interactive component playground (Storybook)
-pnpm storybook
+# 5. Build static Storybook catalog for production
+pnpm build:storybook
 
-# Format all code
+# 6. Build both consumer examples
+pnpm build:examples
+
+# 7. Format codebase
 pnpm format
 ```
 
